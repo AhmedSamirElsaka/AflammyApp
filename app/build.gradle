@@ -96,4 +96,7 @@ dependencies {
 // expandable textview
     implementation 'io.github.glailton.expandabletextview:expandabletextview:1.0.2'
 
+    // paging
+    implementation "androidx.paging:paging-runtime:3.1.1"
+    implementation "androidx.paging:paging-runtime-ktx:3.1.1"
 }

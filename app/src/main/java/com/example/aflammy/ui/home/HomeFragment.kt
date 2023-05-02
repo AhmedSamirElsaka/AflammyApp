@@ -9,6 +9,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.Navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import com.example.aflammy.R
 import com.example.aflammy.databinding.FragmentHomeBinding
 import com.example.aflammy.ui.base.BaseFragment
