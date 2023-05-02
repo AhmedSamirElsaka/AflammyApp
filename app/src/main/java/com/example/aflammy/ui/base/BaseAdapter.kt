@@ -32,7 +32,7 @@ abstract class BaseAdapter<T>(
         if (holder is ItemViewHolder) bind(holder, position)
     }
 
-    private fun bind(holder: BaseAdapter.ItemViewHolder, position: Int) {
+    open fun bind(holder: BaseAdapter.ItemViewHolder, position: Int) {
         holder.binding.apply {
             setVariable(BR.item, items[position])
             setVariable(BR.listener, listener)
