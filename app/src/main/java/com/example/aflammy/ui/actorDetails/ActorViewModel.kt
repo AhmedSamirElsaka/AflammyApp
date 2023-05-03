@@ -5,6 +5,11 @@ import androidx.lifecycle.viewModelScope
 import com.example.aflammy.domain.enums.HomeItemsType
 import com.example.aflammy.domain.usecases.GetActorDetailsUseCase
 import com.example.aflammy.domain.usecases.GetActorMoviesUseCase
+import com.example.aflammy.ui.actorDetails.mappers.ActorDetailsUIMapper
+import com.example.aflammy.ui.actorDetails.mappers.ActorMoviesUIMapper
+import com.example.aflammy.ui.actorDetails.models.ActorDetailsUIEvent
+import com.example.aflammy.ui.actorDetails.models.ActorDetailsUIState
+import com.example.aflammy.ui.actorDetails.models.Error
 import com.example.aflammy.ui.adapters.MovieInteractionListener
 import com.example.aflammy.ui.base.BaseViewModel
 import com.example.aflammy.utilities.Event

@@ -1,6 +1,7 @@
 package com.example.aflammy.ui.actorDetails
 
 import com.example.aflammy.R
+import com.example.aflammy.ui.actorDetails.models.ActorMoviesUIState
 import com.example.aflammy.ui.adapters.MovieInteractionListener
 import com.example.aflammy.ui.base.BaseAdapter
 

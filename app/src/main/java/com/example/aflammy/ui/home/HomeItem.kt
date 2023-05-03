@@ -1,7 +1,7 @@
 package com.example.aflammy.ui.home
 
 import com.example.aflammy.domain.enums.HomeItemsType
-import com.example.aflammy.ui.home.homeUiState.PopularUiState
+import com.example.aflammy.ui.home.models.PopularUiState
 import com.example.aflammy.ui.models.ActorUiState
 import com.example.aflammy.ui.models.MediaUiState
 

@@ -5,6 +5,7 @@ import androidx.paging.CombinedLoadStates
 import androidx.paging.LoadState
 import androidx.paging.map
 import com.example.aflammy.domain.usecases.GetActorsDataUseCase
+import com.example.aflammy.ui.actors.models.ActorsUIEvent
 import com.example.aflammy.ui.actors.models.ActorsUIState
 import com.example.aflammy.ui.adapters.ActorsInteractionListener
 import com.example.aflammy.ui.base.BaseViewModel

@@ -1,4 +1,4 @@
-package com.example.aflammy.ui.home.homeUiState
+package com.example.aflammy.ui.home.models
 
 import com.example.aflammy.domain.enums.AllMediaType
 

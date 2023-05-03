@@ -1,4 +1,4 @@
-package com.example.aflammy.ui.actorDetails
+package com.example.aflammy.ui.actorDetails.models
 
 sealed interface ActorDetailsUIEvent {
     object BackEvent : ActorDetailsUIEvent

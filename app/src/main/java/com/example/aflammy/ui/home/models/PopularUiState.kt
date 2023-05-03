@@ -1,4 +1,4 @@
-package com.example.aflammy.ui.home.homeUiState
+package com.example.aflammy.ui.home.models
 
 data class PopularUiState(
     val movieID: Int,

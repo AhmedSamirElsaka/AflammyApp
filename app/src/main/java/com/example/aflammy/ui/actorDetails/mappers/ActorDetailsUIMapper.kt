@@ -1,7 +1,8 @@
-package com.example.aflammy.ui.actorDetails
+package com.example.aflammy.ui.actorDetails.mappers
 
 import com.example.aflammy.domain.mappers.Mapper
 import com.example.aflammy.domain.models.ActorDetails
+import com.example.aflammy.ui.actorDetails.models.ActorDetailsUIState
 import javax.inject.Inject
 
 class ActorDetailsUIMapper @Inject constructor() : Mapper<ActorDetails, ActorDetailsUIState> {

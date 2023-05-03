@@ -10,7 +10,7 @@
 
         <variable
             name="item"
-            type="com.example.aflammy.ui.home.homeUiState.PopularUiState" />
+            type="com.example.aflammy.ui.home.models.PopularUiState" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

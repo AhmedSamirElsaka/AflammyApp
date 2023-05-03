@@ -8,6 +8,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.aflammy.R
 import com.example.aflammy.databinding.FragmentActorDetailsBinding
 import com.example.aflammy.domain.enums.AllMediaType
+import com.example.aflammy.ui.actorDetails.models.ActorDetailsUIEvent
 import com.example.aflammy.ui.base.BaseFragment
 import com.example.aflammy.utilities.collectLast
 

@@ -1,20 +1,15 @@
 package com.example.aflammy.ui.home
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.lifecycleScope
-import androidx.navigation.Navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import com.example.aflammy.R
 import com.example.aflammy.databinding.FragmentHomeBinding
 import com.example.aflammy.ui.base.BaseFragment
 import com.example.aflammy.ui.home.adapters.HomeAdapter
-import com.example.aflammy.ui.home.homeUiState.HomeUIEvent
+import com.example.aflammy.ui.home.models.HomeUIEvent
 import com.example.aflammy.utilities.collectLast
 import kotlinx.coroutines.launch
 

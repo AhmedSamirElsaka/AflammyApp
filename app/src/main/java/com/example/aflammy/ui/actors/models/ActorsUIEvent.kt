@@ -1,4 +1,4 @@
-package com.example.aflammy.ui.actors
+package com.example.aflammy.ui.actors.models
 
 sealed interface ActorsUIEvent  {
     object RetryEvent : ActorsUIEvent

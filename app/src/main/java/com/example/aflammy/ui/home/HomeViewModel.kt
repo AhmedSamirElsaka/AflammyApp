@@ -9,8 +9,8 @@ import com.example.aflammy.ui.adapters.MediaInteractionListener
 import com.example.aflammy.ui.adapters.MovieInteractionListener
 import com.example.aflammy.ui.base.BaseViewModel
 import com.example.aflammy.ui.home.adapters.TVShowInteractionListener
-import com.example.aflammy.ui.home.homeUiState.HomeUIEvent
-import com.example.aflammy.ui.home.homeUiState.HomeUiState
+import com.example.aflammy.ui.home.models.HomeUIEvent
+import com.example.aflammy.ui.home.models.HomeUiState
 import com.example.aflammy.ui.mappers.ActorUiMapper
 import com.example.aflammy.ui.mappers.MediaUiMapper
 import com.example.aflammy.utilities.Event
