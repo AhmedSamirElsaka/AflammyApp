@@ -2,7 +2,7 @@
 
     <item android:color="@color/brand_color" android:state_enabled="true" android:state_selected="true"/>
     <item android:color="@color/brand_color" android:state_enabled="true" android:state_checked="true"/>
-    <item android:alpha="100.0" android:color="@color/background_color" android:state_enabled="true"/>
-    <item android:alpha="100.0" android:color="@color/background_color"/>
+    <item android:alpha="100.0" android:color="@color/white" android:state_enabled="true"/>
+    <item android:alpha="100.0" android:color="@color/white"/>
 
 </selector>

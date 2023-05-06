@@ -30,13 +30,13 @@
             app:layout_constraintStart_toStartOf="@+id/actor_image"
             app:layout_constraintTop_toTopOf="@+id/actor_image"
             app:layout_constraintBottom_toBottomOf="@+id/actor_image"
-            />
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.0" />
 
         <Constraint
             android:id="@+id/animation_lost_connection"
             android:layout_width="128dp"
             android:layout_height="128dp"
-            android:elevation="1dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"

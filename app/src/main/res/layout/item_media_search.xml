@@ -12,20 +12,23 @@
             type="com.example.aflammy.ui.search.adapters.MediaSearchInteractionListener" />
     </data>
 
-    <androidx.cardview.widget.CardView
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardElevation="0dp"
         android:layout_marginVertical="@dimen/spacing_small"
         android:layout_marginHorizontal="@dimen/spacing_small"
         android:onClick="@{() -> listener.onClickMediaResult(item)}"
-        app:cardCornerRadius="@dimen/radius_small">
+        app:cardCornerRadius="@dimen/radius_large"
+        app:strokeColor="@color/brand_color"
+        app:strokeWidth="@dimen/card_stroke_width"
+        app:cardBackgroundColor="@color/background_color">
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/card_background_color">
+            android:background="@color/background_color">
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/image_movie"
@@ -82,5 +85,5 @@
                 tools:text="2022" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
+    </com.google.android.material.card.MaterialCardView>
 </layout>

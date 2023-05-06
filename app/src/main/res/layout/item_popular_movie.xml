@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
@@ -17,7 +18,8 @@
         android:layout_width="wrap_content"
         android:onClick="@{()->listener.onClickMovie(item.movieID)}"
         android:layout_height="wrap_content"
-        android:paddingVertical="@dimen/spacing_small">
+        android:paddingVertical="@dimen/spacing_small"
+        android:background="@color/background_color">
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/image_movie"
@@ -57,6 +59,7 @@
             android:paddingStart="0dp"
             android:paddingEnd="@dimen/spacing_medium"
             android:text="@{item.title}"
+            tools:text="hello"
             android:textColor="@color/white_primary"
             app:layout_constraintBottom_toTopOf="@+id/text_category"
             app:layout_constraintStart_toStartOf="@+id/image_movie" />

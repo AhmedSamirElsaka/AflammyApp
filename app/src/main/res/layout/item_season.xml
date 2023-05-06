@@ -19,7 +19,7 @@
         android:layout_height="144dp"
         android:layout_marginBottom="@dimen/spacing_medium"
         android:paddingHorizontal="@dimen/spacing_medium"
-        tools:background="@color/black">
+        tools:background="@color/background_color">
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/card_season"

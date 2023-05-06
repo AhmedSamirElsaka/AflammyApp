@@ -10,6 +10,7 @@ import com.example.aflammy.data.remote.response.movie.*
 import com.example.aflammy.data.remote.response.review.*
 import com.example.aflammy.data.remote.response.trailerVideosDto.*
 import com.example.aflammy.data.remote.response.tvShow.*
+import com.example.aflammy.domain.enums.TrendingTimeWindow
 
 import retrofit2.Response
 import retrofit2.http.*

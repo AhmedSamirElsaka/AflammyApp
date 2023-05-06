@@ -11,9 +11,10 @@ import com.example.aflammy.ui.base.BaseFragment
 import com.example.aflammy.ui.home.adapters.HomeAdapter
 import com.example.aflammy.ui.home.models.HomeUIEvent
 import com.example.aflammy.utilities.collectLast
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
-
+@AndroidEntryPoint
 class HomeFragment : BaseFragment<FragmentHomeBinding>() {
     override val fragmentLayoutId: Int = R.layout.fragment_home
     override val viewModel: HomeViewModel by viewModels()

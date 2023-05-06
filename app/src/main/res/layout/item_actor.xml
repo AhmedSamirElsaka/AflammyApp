@@ -18,7 +18,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:background="@color/black"
+        tools:background="@color/background_color"
         android:layout_marginVertical="@dimen/spacing_small"
         android:layout_marginHorizontal="@dimen/spacing_small"
         android:background="@android:color/transparent">
@@ -42,7 +42,7 @@
             style="@style/SemiBold.Small"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="@dimen/spacing_small"
             android:ellipsize="end"
             android:lines="1"
             android:textAlignment="center"

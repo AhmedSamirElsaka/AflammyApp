@@ -4,11 +4,9 @@ plugins {
     id "kotlin-kapt"
     id 'dagger.hilt.android.plugin'
     id 'androidx.navigation.safeargs'
-
 }
 
 android {
-    namespace 'com.example.aflammy'
     compileSdk 33
 
     defaultConfig {
@@ -99,4 +97,14 @@ dependencies {
     // paging
     implementation "androidx.paging:paging-runtime:3.1.1"
     implementation "androidx.paging:paging-runtime-ktx:3.1.1"
+
+    //Coil
+    implementation 'io.coil-kt:coil:2.2.2'
+
+    // Coil image
+    def coil_version = '2.2.2'
+    implementation "io.coil-kt:coil-compose:$coil_version"
+
+    implementation("com.tbuonomo:dotsindicator:4.3")
+
 }

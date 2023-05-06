@@ -19,6 +19,13 @@ abstract class RepositoryModule {
 
     @ViewModelScoped
     @Binds
+    abstract fun bindOnBoardingRepository(
+        onBoardingRepositoryImpl: OnBoardingRepositoryImpl
+    ): OnBoardingRepository
+
+
+    @ViewModelScoped
+    @Binds
     abstract fun bindSeriesRepository(
         seriesRepositoryImp: SeriesRepositoryImp
     ): SeriesRepository

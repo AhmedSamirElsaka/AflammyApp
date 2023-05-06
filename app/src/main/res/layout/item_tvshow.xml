@@ -6,7 +6,7 @@
     <data>
         <variable
             name="listener"
-            type="com.example.aflammy.ui.home.adapter.TVShowInteractionListener" />
+            type="com.example.aflammy.ui.home.adapters.TVShowInteractionListener" />
 
         <variable
             name="item"
@@ -20,7 +20,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/background_color">
 
         <com.google.android.material.imageview.ShapeableImageView
             android:layout_width="@dimen/media_card_width"

@@ -16,34 +16,34 @@
     <androidx.constraintlayout.motion.widget.MotionLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/black"
+        android:background="@color/background_color"
         app:layoutDescription="@xml/fragment_actor_details_scene">
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/loading"
-            android:layout_width="172dp"
-            android:layout_height="172dp"
-            android:elevation="1dp"
+            android:layout_width="@dimen/lottie_loading_dimens"
+            android:layout_height="@dimen/lottie_loading_dimens"
+            android:elevation="@dimen/lottie_animation_elevation"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
-            app:lottie_rawRes="@raw/lottie_loading_animation"
+            app:lottie_rawRes="@raw/loading_animation"
             app:isVisible="@{viewModel.actorDetailsUIState.isLoading}" />
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/animation_lost_connection"
-            android:layout_width="128dp"
-            android:layout_height="128dp"
+            android:layout_width="@dimen/lottie_dimens"
+            android:layout_height="@dimen/lottie_dimens"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
-            app:lottie_rawRes="@raw/lottie_lost_connection"
+            app:lottie_rawRes="@raw/lost_internet_animation"
             app:showWhenListNotEmpty="@{viewModel.actorDetailsUIState.error}" />
 
         <Button
@@ -67,7 +67,7 @@
             android:layout_marginTop="@dimen/spacing_large"
             android:gravity="center"
             android:text="@string/description"
-            android:textColor="@color/main_color"
+            android:textColor="@color/brand_color"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/animation_lost_connection"
@@ -77,7 +77,7 @@
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/actor_image"
             android:layout_width="match_parent"
-            android:layout_height="364dp"
+            android:layout_height="@dimen/actor_details_image_height"
             android:scaleType="centerCrop"
             app:isVisible="@{viewModel.actorDetailsUIState.success}"
             app:layout_constraintEnd_toEndOf="parent"
@@ -89,7 +89,7 @@
         <View
             android:id="@+id/view_bottom_shadow"
             android:layout_width="match_parent"
-            android:layout_height="364dp"
+            android:layout_height="@dimen/actor_details_image_height"
             android:background="@drawable/shape_shadow"
             app:layout_constraintBottom_toBottomOf="@+id/actor_image"
             app:layout_constraintEnd_toEndOf="@+id/actor_image"
@@ -100,14 +100,14 @@
             android:id="@+id/back_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginStart="@dimen/spacing_medium"
+            android:layout_marginTop="@dimen/spacing_medium"
             android:background="@drawable/back_icon_shape"
             android:padding="@dimen/spacing_small"
             android:src="@drawable/ic_arrow_left"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:tint="@color/black"
+            app:tint="@color/background_color"
             android:onClick="@{() -> viewModel.onClickBack()}"/>
 
         <TextView
@@ -133,7 +133,7 @@
                 android:id="@+id/details"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/black"
+                android:background="@color/background_color"
                 android:visibility="gone"
                 app:isVisible="@{viewModel.actorDetailsUIState.success}">
 
@@ -142,7 +142,7 @@
                     style="@style/Regular.Small.Secondary"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="24dp"
+                    android:layout_marginTop="@dimen/spacing_large"
                     android:text="@string/gender"
                     app:layout_constraintEnd_toStartOf="@+id/birthday_title"
                     app:layout_constraintStart_toStartOf="parent"
@@ -166,7 +166,7 @@
                     style="@style/Regular.Small.Secondary"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="24dp"
+                    android:layout_marginTop="@dimen/spacing_large"
                     android:text="@string/birthday"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/genres_title"
@@ -198,7 +198,7 @@
                 <TextView
                     android:id="@+id/text_place_of_birth_actor"
                     style="@style/SemiBold.Medium"
-                    android:layout_width="140dp"
+                    android:layout_width="@dimen/text_place_of_birth_actor_width"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="@dimen/spacing_small"
@@ -225,7 +225,7 @@
                 <TextView
                     android:id="@+id/text_known_for_actor"
                     style="@style/SemiBold.Medium"
-                    android:layout_width="140dp"
+                    android:layout_width="@dimen/actor_knwon_for_text_width"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_small"
                     android:lines="2"
@@ -258,7 +258,7 @@
                     android:onClick="@{() -> viewModel.onClickSeeAllMovie(HomeItemsType.NON)}"
                     app:showWhenListNotEmpty="@{viewModel.actorDetailsUIState.actorMovies}"
                     android:text="@string/see_all"
-                    android:textColor="@color/main_color"
+                    android:textColor="@color/brand_color"
                     app:drawableEndCompat="@drawable/ic_arrow_right"
                     app:layout_constraintBottom_toBottomOf="@+id/related_movie_title"
                     app:layout_constraintEnd_toEndOf="parent"

@@ -12,6 +12,11 @@ interface AppConfiguration {
 
     suspend fun getRequestDate(key: String): Long?
 
+    suspend fun saveOnboardingScreenState(value: Boolean = false)
+
+    suspend fun getOnboardingScreenState(): Boolean?
+
+
 }
 
 class AppConfigurator @Inject constructor(private val dataStorePreferences: DataStorePreferences) :
@@ -33,9 +38,17 @@ class AppConfigurator @Inject constructor(private val dataStorePreferences: Data
         return dataStorePreferences.readLong(key)
     }
 
+    override suspend fun saveOnboardingScreenState( value: Boolean) {
+        dataStorePreferences.writeBoolean(ONBOARDING_SCREEN_STATE_ID, value)
+    }
+
+    override suspend fun getOnboardingScreenState(): Boolean? {
+        return dataStorePreferences.readBoolean(ONBOARDING_SCREEN_STATE_ID)
+    }
 
 
     companion object DataStorePreferencesKeys {
         const val SESSION_ID_KEY = "session_id"
+        const val  ONBOARDING_SCREEN_STATE_ID = "onboarding_screen"
     }
 }

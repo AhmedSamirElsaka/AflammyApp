@@ -1,7 +1,6 @@
 package com.example.aflammy.domain.mappers
 
 import com.example.aflammy.domain.mappers.actor.ActorDtoMapper
-import com.example.aflammy.domain.mappers.movie.TrailerMapper
 import com.example.aflammy.domain.mappers.series.*
 import javax.inject.Inject
 

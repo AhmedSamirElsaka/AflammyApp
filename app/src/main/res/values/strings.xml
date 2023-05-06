@@ -104,4 +104,18 @@
     <string name="episode_title">%1$d. %2$s</string>
     <string name="season_number">(%1$s Seasons)</string>
     <string name="title_activity_start">StartActivity</string>
+
+
+    <string name="next">Next</string>
+    <string name="fourth_onboarding_title_text">Stay Updated</string>
+    <string name="forth_onboarding_description_text">Never miss out on the latest releases, exclusive content, or trending shows. Our app keeps you informed about the hottest movies and series, ensuring you\'re always in the know.t</string>
+
+    <string name="third_onboarding_title_text">Watch Anywhere, Anytime</string>
+    <string name="third_onboarding_description_text">Enjoy the freedom of watching movies and series on your terms. Stream your favorite content on your phone, tablet, or smart TV. Pause and resume whenever you want, and pick up right where you left off.</string>
+
+    <string name="second_onboarding_title_text">Personalized Recommendations</string>
+    <string name="second_onboarding_description_text">We understand that everyone has unique tastes. Our app utilizes advanced algorithms to curate personalized recommendations tailored to your preferences. Discover hidden gems and rediscover old classics.</string>
+
+    <string name="first_onboarding_description_text">Our extensive collection includes a wide range of movies and series from different genres, eras, and countries. Lose yourself in the world of cinema and find new favorites.</string>
+    <string name="first_onboarding_title_text">Explore a Vast Library</string>
 </resources>

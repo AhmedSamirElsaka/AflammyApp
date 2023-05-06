@@ -22,7 +22,7 @@
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/text_confirmation"
-                style="@style/SemiBold.Large"
+                style="@style/SemiBold.Large.Black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/spacing_large"
@@ -33,7 +33,7 @@
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/text_confirmation_message"
-                style="@style/Regular.Medium"
+                style="@style/Regular.Medium.Black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/spacing_medium"
@@ -53,14 +53,14 @@
                 android:paddingHorizontal="@dimen/spacing_small"
                 android:paddingVertical="@dimen/spacing_small"
                 android:text="@string/logout"
-                android:textColor="@color/main_color"
+                android:textColor="@color/dangerous_actions_color"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/text_confirmation_message" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/text_cancel"
-                style="@style/Regular.Medium"
+                style="@style/Regular.Medium.Black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="@dimen/spacing_large"

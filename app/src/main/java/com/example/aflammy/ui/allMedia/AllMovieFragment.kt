@@ -1,12 +1,8 @@
 package com.example.aflammy.ui.allMedia
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.ViewModel
 import androidx.navigation.fragment.findNavController
 import androidx.paging.PagingData
 import androidx.recyclerview.widget.GridLayoutManager
@@ -20,8 +16,9 @@ import com.example.aflammy.ui.models.MediaUiState
 import com.example.aflammy.utilities.collect
 import com.example.aflammy.utilities.collectLast
 import com.example.aflammy.utilities.setSpanSize
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class AllMovieFragment : BaseFragment<FragmentAllMovieBinding>() {
 
     override val fragmentLayoutId = R.layout.fragment_all_movie

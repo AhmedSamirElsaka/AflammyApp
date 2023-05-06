@@ -6,12 +6,13 @@
     <data>
         <variable
             name="adapterRecycler"
-            type="com.example.aflammy.ui.home.adapter.PopularMovieAdapter" />
+            type="com.example.aflammy.ui.home.adapters.PopularMovieAdapter" />
 
     </data>
 
 
     <androidx.recyclerview.widget.RecyclerView
+        android:background="@color/background_color"
         android:id="@+id/recycler_popular_movie"
         android:layout_width="match_parent"
         android:layout_marginTop="1dp"

@@ -19,9 +19,8 @@
         android:layout_height="wrap_content"
         android:layout_marginVertical="@dimen/spacing_small"
         android:layout_marginHorizontal="@dimen/spacing_small"
-        android:backgroundTint="@color/black"
-        android:onClick="@{() -> listener.onClickActor(item.id)}"
-        >
+        android:backgroundTint="@color/background_color"
+        android:onClick="@{() -> listener.onClickActor(item.id)}">
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/cast_image"
@@ -42,7 +41,7 @@
             style="@style/Regular.Small.Secondary"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="@dimen/spacing_small"
             android:ellipsize="end"
             android:lines="2"
             android:text="@{item.name}"

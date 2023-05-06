@@ -11,8 +11,9 @@ import com.example.aflammy.domain.enums.AllMediaType
 import com.example.aflammy.ui.actorDetails.models.ActorDetailsUIEvent
 import com.example.aflammy.ui.base.BaseFragment
 import com.example.aflammy.utilities.collectLast
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class ActorDetailsFragment : BaseFragment<FragmentActorDetailsBinding>() {
 
     override val  fragmentLayoutId = R.layout.fragment_actor_details

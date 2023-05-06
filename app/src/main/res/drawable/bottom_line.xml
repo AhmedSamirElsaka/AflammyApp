@@ -3,6 +3,9 @@
     <item>
         <shape>
             <solid android:color="@color/background_color" />
+            <stroke android:width="2dp"
+                android:color="@color/brand_color"/>
+            <corners android:radius="16dp" />
         </shape>
     </item>
     <item android:gravity="bottom">

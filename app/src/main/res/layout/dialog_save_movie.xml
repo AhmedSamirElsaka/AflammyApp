@@ -48,7 +48,7 @@
 
         <TextView
             android:id="@+id/text_message_wrong"
-            style="@style/SemiBold.Medium"
+            style="@style/SemiBold.Medium.Black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginVertical="@dimen/spacing_large"
@@ -63,7 +63,7 @@
 
         <TextView
             android:id="@+id/text_message_empty_list"
-            style="@style/SemiBold.Medium"
+            style="@style/SemiBold.Medium.Black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginVertical="@dimen/spacing_large"

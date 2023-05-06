@@ -1,7 +1,6 @@
 package com.example.aflammy.domain.models
 
 import com.example.aflammy.domain.enums.MediaType
-import com.karrar.movieapp.domain.models.Season
 
 
 abstract class MediaDetails(

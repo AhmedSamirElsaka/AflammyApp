@@ -37,7 +37,6 @@ class GetTvShowDetailsUseCase @Inject constructor(
         return MediaDetailsReviews(reviews.take(MAX_NUM_REVIEWS), reviews.size > MAX_NUM_REVIEWS)
     }
 
-
     suspend fun getTvShowRated(tvShowID: Int): Float {
         val result = seriesRepository.getRatedTvShow()
         return result?.let {

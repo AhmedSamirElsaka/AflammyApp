@@ -1,6 +1,7 @@
 package com.example.aflammy.domain.mappers
 
 import com.example.aflammy.data.local.database.entity.WatchHistoryEntity
+import com.example.aflammy.ui.profile.watchhistory.MediaHistoryUiState
 import javax.inject.Inject
 
 

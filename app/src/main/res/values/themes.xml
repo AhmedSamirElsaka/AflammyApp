@@ -1,5 +1,5 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <style name="Theme.Aflammy" parent="Theme.MaterialComponents.NoActionBar">
+<resources >
+    <style name="Theme.Aflammy" parent="Theme.MaterialComponents.DayNight">
         <!-- Primary brand color. -->
         <item name="colorPrimary">#FFC107</item>
         <item name="colorPrimaryVariant">#FFA000</item>
@@ -17,15 +17,23 @@
 
     <style name="SemiBold">
         <item name="android:fontFamily">@font/plus_jakarta_sans_semibold</item>
-        <item name="android:textColor">@color/shade_primary_color</item>
+        <item name="android:textColor">@color/white</item>
     </style>
 
     <style name="SemiBold.Large">
         <item name="android:textSize">@dimen/text_large</item>
     </style>
 
+    <style name="SemiBold.Large.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
     <style name="SemiBold.Medium">
         <item name="android:textSize">@dimen/text_medium</item>
+    </style>
+
+    <style name="SemiBold.Medium.Black">
+        <item name="android:textColor">@color/black</item>
     </style>
 
     <style name="SemiBold.Small">
@@ -35,32 +43,37 @@
 
     <style name="Regular">
         <item name="android:fontFamily">@font/plus_jakarta_sans_regular</item>
+        <item name="android:textColor">@color/white</item>
     </style>
 
     <style name="Regular.Medium">
         <item name="android:textSize">@dimen/text_medium</item>
     </style>
+    <style name="Regular.Medium.Black">
+        <item name="android:textSize">@dimen/text_medium</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
 
     <style name="Regular.Medium.Primary">
-        <item name="android:textColor">@color/shade_primary_color</item>
+        <item name="android:textColor">@color/white_primary</item>
     </style>
 
     <style name="Regular.Medium.Secondary">
-        <item name="android:textColor">@color/shade_secondary_color</item>
+        <item name="android:textColor">@color/white_secondary</item>
     </style>
 
 
     <style name="Regular.Small">
         <item name="android:textSize">@dimen/text_small</item>
-        <item name="android:textColor">@color/shade_primary_color</item>
+        <item name="android:textColor">@color/white</item>
     </style>
 
     <style name="Regular.Small.Secondary">
-        <item name="android:textColor">@color/shade_secondary_color</item>
+        <item name="android:textColor">@color/white_secondary</item>
     </style>
 
     <style name="Regular.Small.ternary">
-        <item name="android:textColor">@color/shade_ternary_color</item>
+        <item name="android:textColor">@color/white_primary</item>
     </style>
 
 
@@ -123,7 +136,7 @@
 
 
     <style name="chipChip" parent="Widget.Material3.Chip.Suggestion">
-        <item name="chipStrokeColor">@color/main_color</item>
+        <item name="chipStrokeColor">@color/brand_color</item>
         <item name="chipSurfaceColor">@color/shade_secondary_color</item>
         <item name="chipStrokeWidth">@dimen/cardview_compat_inset_shadow</item>
     </style>
@@ -138,8 +151,20 @@
 
 
     <style name="Regular.Small.Primary">
-        <item name="android:textColor">@color/shade_primary_color</item>
+        <item name="android:textColor">@color/white_primary</item>
 
+    </style>
+
+    <style name="text_input_layout_style" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+        <item name="android:layout_marginTop">@dimen/spacing_medium</item>
+        <item name="android:textColorHint">@color/white</item>
+
+        <item name="boxCornerRadiusBottomEnd" >@dimen/radius_large</item>
+       <item name="boxCornerRadiusBottomStart">@dimen/radius_large</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/radius_large</item>
+        <item name="boxCornerRadiusTopStart">@dimen/radius_large</item>
+        <item name="boxStrokeColor">@color/text_input_layout_selector</item>
     </style>
 
 

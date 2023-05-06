@@ -17,7 +17,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:background="@color/black"
+        tools:background="@color/background_color"
         android:background="@android:color/transparent">
 
         <TextView
@@ -28,7 +28,6 @@
             android:layout_height="wrap_content"
             android:text="@string/title_celebrity"
             tools:text="Celebrities"
-            android:textColor="@color/shade_primary_color"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -40,7 +39,7 @@
             android:layout_marginEnd="@dimen/spacing_too_small"
             android:onClick="@{() -> listener.onClickSeeAllActors()}"
             android:text="@string/see_all"
-            android:textColor="@color/main_color"
+            android:textColor="@color/brand_color"
             app:drawableEndCompat="@drawable/ic_arrow_right"
             app:layout_constraintBaseline_toBaselineOf="@+id/text_celebrities"
             app:layout_constraintEnd_toEndOf="parent" />

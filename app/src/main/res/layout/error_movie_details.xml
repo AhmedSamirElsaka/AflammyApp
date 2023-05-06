@@ -15,18 +15,20 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        app:isVisible="@{isError}" >
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/animation_lost_connection"
-            android:layout_width="128dp"
-            android:layout_height="128dp"
+            android:layout_width="@dimen/lottie_dimens"
+            android:layout_height="@dimen/lottie_dimens"
             android:layout_marginBottom="@dimen/spacing_small"
             app:layout_constraintBottom_toTopOf="@+id/title_lost_connection"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:lottie_autoPlay="true"
-            app:lottie_rawRes="@raw/lottie_lost_connection" />
+            app:lottie_rawRes="@raw/lost_internet_animation" />
 
         <TextView
             android:id="@+id/title_lost_connection"
@@ -48,7 +50,7 @@
             android:layout_marginTop="@dimen/spacing_medium"
             android:gravity="center"
             android:text="@string/description"
-            android:textColor="@color/main_color"
+            android:textColor="@color/brand_color"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/title_lost_connection" />

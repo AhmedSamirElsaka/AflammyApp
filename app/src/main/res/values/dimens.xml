@@ -8,6 +8,9 @@
     <dimen name="spacing_too_small">4dp</dimen>
     <dimen name="season_card_width">88dp</dimen>
 
+
+    <dimen name="lottie_dimens">300dp</dimen>
+
     <!--  layout -->
     <dimen name="spacing_actor">72dp</dimen>
     <dimen name="media_card_width">128dp</dimen>
@@ -26,5 +29,18 @@
 
     <!-- chips -->
     <dimen name="chip_height">32dp</dimen>
+    <dimen name="card_stroke_width">2dp</dimen>
+
+    <dimen name="bottom_nav_icon_dimens">20dp</dimen>
+    <dimen name="lottie_loading_dimens">128dp</dimen>
+    <dimen name="splash_screen_image_height">500dp</dimen>
+    <dimen name="lottie_animation_elevation">1dp</dimen>
+    <dimen name="actor_details_image_height">364dp</dimen>
+    <dimen name="text_place_of_birth_actor_width">140dp</dimen>
+    <dimen name="actor_knwon_for_text_width">140dp</dimen>
+    <dimen name="category_fragment_appBar_height">60dp</dimen>
+    <dimen name="exploring_category_item_dimens">40dp</dimen>
+    <dimen name="text_input_height">56dp</dimen>
+    <dimen name="login_button_height">56dp</dimen>
 
 </resources>

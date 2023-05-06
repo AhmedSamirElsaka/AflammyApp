@@ -3,7 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="red">#FF1100</color>
-    <color name="main_color">#FFC107</color>
+    <color name="brand_color">#FFC107</color>
     <color name="colorDisabled">#8E6F13</color>
 
 
@@ -25,5 +25,18 @@
 
     <color name="profile_background">#9903050A</color>
 
+    <color name="background_color">#000000</color>
+    <color name="background_color.white">#FFFFFF</color>
+    <color name="text_color">#FFFFFF</color>
+
+    <color name="dangerous_actions_color">#FF1100</color>
+
+
+    <color name="blackNavy">#10101C</color>
+    <color name="next_1">#8B88DC</color>
+    <color name="next_2">#0183C5</color>
+    <color name="next_3">#2F6DFF</color>
+    <color name="next_4">#5FA091</color>
+    <color name="dark_navy">#0E2132</color>
 
 </resources>

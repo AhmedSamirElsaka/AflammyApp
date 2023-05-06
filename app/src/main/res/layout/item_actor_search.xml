@@ -38,7 +38,7 @@
             style="@style/Regular.Small.Secondary"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="@dimen/spacing_small"
             android:ellipsize="end"
             android:lines="2"
             android:textAlignment="center"
