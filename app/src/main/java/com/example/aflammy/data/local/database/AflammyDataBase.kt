@@ -17,7 +17,7 @@ import com.example.aflammy.data.local.database.entity.*
     version = 1
 )
 @TypeConverters(Converters::class)
-abstract class MovieDataBase : RoomDatabase() {
+abstract class AflammyDataBase : RoomDatabase() {
     abstract fun movieDao(): MovieDao
     abstract fun actorDao(): ActorDao
     abstract fun seriesDao(): SeriesDao

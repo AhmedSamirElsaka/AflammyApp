@@ -30,7 +30,7 @@
             app:layout_constraintBottom_toBottomOf="@id/input_search"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/input_search"
-            app:tint="@color/shade_primary_color" />
+            app:tint="@color/white" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/input_search"
@@ -127,7 +127,6 @@
             android:drawablePadding="@dimen/spacing_small"
             android:gravity="center"
             android:text="@string/history_label"
-            android:textColor="@color/shade_primary_color"
             app:drawableStartCompat="@drawable/ic_history"
             app:hideWhenListIsEmpty="@{viewModel.uiState.searchHistory}"
             app:hideWhenSearch="@{viewModel.uiState.searchInput}"
@@ -142,7 +141,7 @@
             android:orientation="vertical"
             android:paddingHorizontal="@dimen/spacing_small"
             android:paddingVertical="@dimen/spacing_small"
-            app:errorSearch="@{viewModel.uiState.error}"
+            app:errorSearch="@{viewModel.uiState.mediaSearchUIError}"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -173,8 +172,8 @@
             tools:listitem="@layout/item_search_history" />
 
         <include
-            android:id="@+id/loading"
-            layout="@layout/loading2"
+            android:id="@+id/home_loading_layout"
+            layout="@layout/loading_layout"
             app:isLoading="@{viewModel.uiState.loading}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -182,9 +181,9 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <include
-            android:id="@+id/error"
+            android:id="@+id/home_error_layout"
             layout="@layout/error_search"
-            app:isError="@{!viewModel.uiState.error.isEmpty()}"
+            app:isError="@{!viewModel.uiState.mediaSearchUIError.isEmpty()}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

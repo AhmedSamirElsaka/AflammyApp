@@ -11,5 +11,5 @@ data class MediaSearchUIState(
     val searchHistory: List<SearchHistoryUIState> = emptyList(),
     val isLoading : Boolean = false,
     val isEmpty: Boolean = false,
-    val error : List<Error> = emptyList(),
+    val mediaSearchUIError : List<MediaSearchUIError> = emptyList(),
 )

@@ -33,7 +33,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:posterImage="@{item.imageUrl}"
             app:shapeAppearanceOverlay="@style/Circle"
-            tools:srcCompat="@drawable/image"
+            tools:srcCompat="@drawable/actor"
             />
 
         <TextView

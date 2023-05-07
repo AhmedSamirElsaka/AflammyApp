@@ -11,7 +11,7 @@
 
         <variable
             name="item"
-            type="com.example.aflammy.ui.tvShowDetails.tvShowUIState.SeasonUIState" />
+            type="com.example.aflammy.ui.tvShowDetails.tvShowUIState.TvShowSeasonUIState" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -47,7 +47,7 @@
             app:mediaPoster="@{item.imageUrl}"
             app:shapeAppearanceOverlay="@style/CardCorners.Medium"
             tools:background="@color/yellow"
-            tools:src="@drawable/test_2" />
+            tools:src="@drawable/movie" />
 
         <TextView
             android:id="@+id/text_episode_name"

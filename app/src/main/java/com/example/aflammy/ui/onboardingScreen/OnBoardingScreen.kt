@@ -27,9 +27,9 @@ class OnBoardingScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        if (viewModel.getOnBoardingScreenState() == true) {
-            startMainActivity()
-        }
+//        if (viewModel.getOnBoardingScreenState() == true) {
+//            startMainActivity()
+//        }
 
         initialize()
         makeStatusbarTransparent()

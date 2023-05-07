@@ -20,7 +20,7 @@
         app:layoutDescription="@xml/fragment_actor_details_scene">
 
         <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/loading"
+            android:id="@+id/home_loading_layout"
             android:layout_width="@dimen/lottie_loading_dimens"
             android:layout_height="@dimen/lottie_loading_dimens"
             android:elevation="@dimen/lottie_animation_elevation"
@@ -84,7 +84,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:posterImage="@{viewModel.actorDetailsUIState.imageUrl}"
-            tools:src="@drawable/chris_evans" />
+            tools:src="@drawable/actor" />
 
         <View
             android:id="@+id/view_bottom_shadow"

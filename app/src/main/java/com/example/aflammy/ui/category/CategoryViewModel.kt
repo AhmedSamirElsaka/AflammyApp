@@ -11,7 +11,7 @@ import com.example.aflammy.ui.adapters.MediaInteractionListener
 import com.example.aflammy.ui.base.BaseViewModel
 import com.example.aflammy.ui.category.uiState.CategoryUIEvent
 import com.example.aflammy.ui.category.uiState.CategoryUIState
-import com.example.aflammy.ui.category.uiState.ErrorUIState
+import com.example.aflammy.ui.category.uiState.CategoryErrorUIState
 import com.example.aflammy.utilities.Constants.FIRST_CATEGORY_ID
 import com.example.aflammy.utilities.Event
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -56,7 +56,7 @@ class CategoryViewModel @Inject constructor(
                         genre = getGenresUseCase(args.mediaId).map { genreUIStateMapper.map(it) })
                 }
             } catch (t: Throwable) {
-                _uiState.update { it.copy(error = listOf(ErrorUIState(-1, t.message.toString()))) }
+                _uiState.update { it.copy(error = listOf(CategoryErrorUIState(-1, t.message.toString()))) }
             }
         }
     }
@@ -99,7 +99,7 @@ class CategoryViewModel @Inject constructor(
             }
             is LoadState.Error -> {
                 _uiState.update {
-                    it.copy(isLoading = false, error = listOf(ErrorUIState(404, "Error")))
+                    it.copy(isLoading = false, error = listOf(CategoryErrorUIState(404, "Error")))
                 }
             }
         }

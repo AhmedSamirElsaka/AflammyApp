@@ -44,7 +44,7 @@ class EpisodesViewModel @Inject constructor(
             } catch (e: Exception) {
                 _stateFlowEpisode.update {
                     it.copy(
-                        error = listOf(com.example.aflammy.ui.tvShowDetails.tvShowUIState.Error(message = e.message.toString())),
+                        tvShowError = listOf(com.example.aflammy.ui.tvShowDetails.tvShowUIState.TvShowError(message = e.message.toString())),
                         isLoading = false
                     )
                 }

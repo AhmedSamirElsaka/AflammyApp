@@ -10,7 +10,7 @@
 
         <variable
             name="item"
-            type="com.example.aflammy.ui.category.uiState.MediaUIState" />
+            type="com.example.aflammy.ui.category.uiState.CategoryMediaUIState" />
     </data>
 
     <com.google.android.material.imageview.ShapeableImageView

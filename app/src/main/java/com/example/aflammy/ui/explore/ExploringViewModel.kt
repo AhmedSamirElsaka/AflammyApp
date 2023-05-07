@@ -3,7 +3,7 @@ package com.example.aflammy.ui.explore
 import androidx.lifecycle.viewModelScope
 import com.example.aflammy.domain.usecases.GetTrendingMovieUseCase
 import com.example.aflammy.ui.base.BaseViewModel
-import com.example.aflammy.ui.explore.exploreUIState.ErrorUIState
+import com.example.aflammy.ui.explore.exploreUIState.ExploreErrorUIState
 import com.example.aflammy.ui.explore.exploreUIState.ExploreUIState
 import com.example.aflammy.ui.explore.exploreUIState.ExploringUIEvent
 import com.example.aflammy.ui.explore.exploreUIState.TrendyMediaUIState
@@ -47,7 +47,7 @@ class ExploringViewModel @Inject constructor(
                 _uiState.update {
                     it.copy(
                         isLoading = false,
-                        error = listOf(ErrorUIState(404, ""))
+                        error = listOf(ExploreErrorUIState(404, ""))
                     )
                 }
             }

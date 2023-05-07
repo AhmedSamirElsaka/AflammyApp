@@ -13,7 +13,7 @@ import com.google.android.material.chip.ChipGroup
 import com.example.aflammy.R
 import com.example.aflammy.domain.enums.MediaType
 import com.example.aflammy.ui.base.BaseAdapter
-import com.example.aflammy.ui.category.uiState.ErrorUIState
+import com.example.aflammy.ui.category.uiState.CategoryErrorUIState
 import com.example.aflammy.ui.category.uiState.GenreUIState
 import com.example.aflammy.utilities.Constants.FIRST_CATEGORY_ID
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer
@@ -63,12 +63,12 @@ fun showWhenDoneLoadingAndListIsEmpty(view: View, emptyList: Boolean) {
 }
 
 @BindingAdapter(value = ["app:showWhenNoInternet"])
-fun showWhenNoInternet(view: View, error: List<ErrorUIState>) {
+fun showWhenNoInternet(view: View, error: List<CategoryErrorUIState>) {
     view.isVisible = !error.none { it.code != ErrorUI.NEED_LOGIN }
 }
 
 @BindingAdapter(value = ["app:showWhenNoLogin"])
-fun showWhenNoLogin2(view: View, error: List<ErrorUIState>) {
+fun showWhenNoLogin2(view: View, error: List<CategoryErrorUIState>) {
     view.isVisible = !error.none { it.code == ErrorUI.NEED_LOGIN }
 }
 

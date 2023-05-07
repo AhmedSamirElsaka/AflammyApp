@@ -23,7 +23,7 @@ class TvShowDetailsFragment : BaseFragment<FragmentTvShowDetailsBinding>() {
     override val fragmentLayoutId = R.layout.fragment_tv_show_details
     override val viewModel: TvShowDetailsViewModel by viewModels()
     private val args: TvShowDetailsFragmentArgs by navArgs()
-    private val detailAdapter by lazy { DetailUIStateAdapter(emptyList(), viewModel) }
+    private val detailAdapter by lazy { TvShowDetailsUIStateAdapter(emptyList(), viewModel) }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -33,11 +33,11 @@ class TvShowDetailsFragment : BaseFragment<FragmentTvShowDetailsBinding>() {
     }
 
     private fun collectTVShowDetailsItems() {
-        binding.recyclerView.adapter = detailAdapter
+        binding.homeRecyclerView.adapter = detailAdapter
         lifecycleScope.launch {
             viewModel.stateFlow.collectLatest {
                 detailAdapter.setItems(viewModel.stateFlow.value.detailItemResult)
-                binding.recyclerView.scrollToPosition(0)
+                binding.homeRecyclerView.scrollToPosition(0)
             }
         }
     }

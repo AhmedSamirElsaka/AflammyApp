@@ -42,7 +42,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:posterImage="@{item.image}"
                 app:shapeAppearanceOverlay="@style/CardCorners.Small"
-                tools:src="@drawable/test" />
+                tools:src="@drawable/movie" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/text_title_movie"
@@ -57,7 +57,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/image_movie"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:text="The Mandalorian" />
+                tools:text="Avengers: Endgame (2019)" />
 
 
             <com.google.android.material.textview.MaterialTextView

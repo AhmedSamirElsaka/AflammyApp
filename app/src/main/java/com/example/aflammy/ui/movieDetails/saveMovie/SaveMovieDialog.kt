@@ -21,7 +21,7 @@ class SaveMovieDialog : BaseDialogFragment<DialogSaveMovieBinding>() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.saveListAdapter.adapter = SaveListAdapter(mutableListOf(), viewModel)
+        binding.saveListRecyclerView.adapter = SaveListAdapter(mutableListOf(), viewModel)
         collectLast(viewModel.saveMovieUIEvent) {
             it.getContentIfNotHandled()?.let { onEvent(it) }
 

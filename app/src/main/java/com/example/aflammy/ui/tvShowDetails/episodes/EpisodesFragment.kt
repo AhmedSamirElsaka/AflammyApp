@@ -22,6 +22,6 @@ class EpisodesFragment : BaseFragment<FragmentEpisodesBinding>() {
     }
 
     private fun setEpisodesAdapter() {
-        binding.recyclerView.adapter = EpisodeAdapter(mutableListOf(), viewModel)
+        binding.homeRecyclerView.adapter = EpisodeAdapter(mutableListOf(), viewModel)
     }
 }

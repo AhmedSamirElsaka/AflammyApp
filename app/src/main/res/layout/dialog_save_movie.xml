@@ -18,7 +18,7 @@
         android:background="@drawable/bottom_sheet_corners">
 
         <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/toolbar"
+            android:id="@+id/dialog_toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:visibility="gone"
@@ -31,7 +31,7 @@
             app:titleTextColor="@color/shade_primary_color" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/save_list_adapter"
+            android:id="@+id/save_list_recycler_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/spacing_medium"
@@ -43,7 +43,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            app:layout_constraintTop_toBottomOf="@id/dialog_toolbar"
             tools:listitem="@layout/item_list" />
 
         <TextView

@@ -1,6 +1,6 @@
 package com.example.aflammy.ui.tvShowDetails.tvShowUIState
 
-data class ReviewUIState(
+data class TvShowReviewUIState(
     val content: String = "",
     val createDate: String = "",
     val userImage: String = "",

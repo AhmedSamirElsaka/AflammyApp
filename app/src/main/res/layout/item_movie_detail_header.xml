@@ -28,7 +28,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:mediaPoster="@{item.image}"
-            tools:src="@drawable/image" />
+            tools:src="@drawable/movie" />
 
         <View
             android:id="@+id/view_bottom_shadow"

@@ -20,11 +20,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/background_color"
-        android:layout_marginBottom="@dimen/spacing_medium">
+        android:layout_marginVertical="@dimen/spacing_small"
+        android:padding="@dimen/spacing_too_small">
 
         <TextView
             android:id="@+id/text_title"
-            style="@style/SemiBold.Medium"
+            style="@style/SemiBold.Large"
+            android:textColor="@color/brand_color"
             tools:text="Now Streaming"
             android:layout_marginStart="@dimen/spacing_medium"
             android:layout_width="wrap_content"
@@ -40,7 +42,6 @@
             android:layout_marginEnd="@dimen/spacing_small"
             android:onClick="@{() -> adapterRecycler.listener.onClickSeeTVShow(AllMediaType.ON_THE_AIR)}"
             android:text="@string/see_all"
-            android:textColor="@color/brand_color"
             app:drawableEndCompat="@drawable/ic_arrow_right"
             app:layout_constraintBaseline_toBaselineOf="@+id/text_title"
             app:layout_constraintEnd_toEndOf="parent" />

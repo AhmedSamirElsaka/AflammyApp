@@ -4,7 +4,7 @@ import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.viewModelScope
 import com.example.aflammy.domain.usecases.GetTrailerUseCase
 import com.example.aflammy.ui.base.BaseViewModel
-import com.example.aflammy.ui.category.uiState.ErrorUIState
+import com.example.aflammy.ui.category.uiState.CategoryErrorUIState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -37,7 +37,7 @@ class YoutubePlayerViewModel @Inject constructor(
                 _trailerUIState.update {
                     it.copy(
                         isLoading = false,
-                        error = listOf(ErrorUIState(404, t.message.toString()))
+                        error = listOf(CategoryErrorUIState(404, t.message.toString()))
                     )
                 }
             }

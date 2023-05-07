@@ -21,7 +21,7 @@
             android:layout_height="wrap_content">
 
             <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/text_confirmation"
+                android:id="@+id/text_confirmation_title"
                 style="@style/SemiBold.Large.Black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -40,7 +40,7 @@
                 android:text="@string/you_re_about_to_sign_out_of_your_account"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/text_confirmation" />
+                app:layout_constraintTop_toBottomOf="@id/text_confirmation_title" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/text_sign_out_action"

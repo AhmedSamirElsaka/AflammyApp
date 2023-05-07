@@ -27,7 +27,7 @@
                 app:setVideoId="@{viewModel.trailerUIState.videoKey}" />
 
             <com.airbnb.lottie.LottieAnimationView
-                android:id="@+id/loading"
+                android:id="@+id/youtube_player_loading_layout"
                 android:layout_width="@dimen/lottie_loading_dimens"
                 android:layout_height="@dimen/lottie_loading_dimens"
                 app:isVisible="@{viewModel.trailerUIState.loading}"
@@ -40,8 +40,8 @@
                 app:lottie_rawRes="@raw/loading_animation" />
 
             <include
-                android:id="@+id/error"
-                layout="@layout/error2"
+                android:id="@+id/youtube_player_error_layout"
+                layout="@layout/error_layout"
                 app:isError="@{!viewModel.trailerUIState.error.empty}"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

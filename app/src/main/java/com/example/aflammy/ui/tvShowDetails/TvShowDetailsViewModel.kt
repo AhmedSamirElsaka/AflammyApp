@@ -12,7 +12,7 @@ import com.example.aflammy.ui.base.BaseViewModel
 import com.example.aflammy.ui.movieDetails.DetailInteractionListener
 import com.example.aflammy.ui.movieDetails.mapper.ActorUIStateMapper
 import com.example.aflammy.ui.tvShowDetails.tvShowUIMapper.TvShowMapperContainer
-import com.example.aflammy.ui.tvShowDetails.tvShowUIState.DetailItemUIState
+import com.example.aflammy.ui.tvShowDetails.tvShowUIState.TvShowDetailItemUIState
 import com.example.aflammy.ui.tvShowDetails.tvShowUIState.TvShowDetailsUIState
 import com.example.aflammy.utilities.Constants
 import com.example.aflammy.utilities.Event
@@ -51,7 +51,7 @@ class TvShowDetailsViewModel @Inject constructor(
     }
 
     override fun getData() {
-        _stateUI.update { it.copy(isLoading = true, errorUIState = emptyList()) }
+        _stateUI.update { it.copy(isLoading = true, tvShowErrorUIState = emptyList()) }
         getTvShowDetails(args.tvShowId)
         getLoginStatus()
         getTvShowCast(args.tvShowId)
@@ -70,13 +70,13 @@ class TvShowDetailsViewModel @Inject constructor(
                         isLoading = false
                     )
                 }
-                updateDetailItems(DetailItemUIState.Header(_stateUI.value.tvShowDetailsResult))
+                updateDetailItems(TvShowDetailItemUIState.Header(_stateUI.value.tvShowDetailsResult))
                 insertMovieToWatchHistory(result)
             } catch (e: Exception) {
                 _stateUI.update {
                     it.copy(
-                        errorUIState = listOf(
-                            com.example.aflammy.ui.tvShowDetails.tvShowUIState.Error(
+                        tvShowErrorUIState = listOf(
+                            com.example.aflammy.ui.tvShowDetails.tvShowUIState.TvShowError(
                                 code = Constants.INTERNET_STATUS,
                                 message = e.message.toString()
                             )
@@ -98,7 +98,7 @@ class TvShowDetailsViewModel @Inject constructor(
                         isLoading = false
                     )
                 }
-                updateDetailItems(DetailItemUIState.Cast(_stateUI.value.seriesCastResult))
+                updateDetailItems(TvShowDetailItemUIState.Cast(_stateUI.value.seriesCastResult))
             } catch (e: Exception) {
             }
 
@@ -117,7 +117,7 @@ class TvShowDetailsViewModel @Inject constructor(
                         isLoading = false
                     )
                 }
-                updateDetailItems(DetailItemUIState.Seasons(_stateUI.value.seriesSeasonsResult))
+                updateDetailItems(TvShowDetailItemUIState.Seasons(_stateUI.value.seriesSeasonsResult))
             } catch (e: Exception) {
             }
         }
@@ -140,7 +140,7 @@ class TvShowDetailsViewModel @Inject constructor(
                         )
                     )
                 }
-                updateDetailItems(DetailItemUIState.Rating(this@TvShowDetailsViewModel))
+                updateDetailItems(TvShowDetailItemUIState.Rating(this@TvShowDetailsViewModel))
             } catch (e: Throwable) {
             }
         }
@@ -178,15 +178,15 @@ class TvShowDetailsViewModel @Inject constructor(
 
     private fun setReviews(showSeeAll: Boolean) {
         _stateUI.value.seriesReviewsResult
-            .forEach { updateDetailItems(DetailItemUIState.Comment(it)) }
-        updateDetailItems(DetailItemUIState.ReviewText)
+            .forEach { updateDetailItems(TvShowDetailItemUIState.Comment(it)) }
+        updateDetailItems(TvShowDetailItemUIState.ReviewText)
 
         if (showSeeAll) {
-            updateDetailItems(DetailItemUIState.SeeAllReviewsButton)
+            updateDetailItems(TvShowDetailItemUIState.SeeAllReviewsButton)
         }
     }
 
-    private fun updateDetailItems(item: DetailItemUIState) {
+    private fun updateDetailItems(item: TvShowDetailItemUIState) {
         val list = _stateUI.value.detailItemResult.toMutableList()
         list.add(item)
         _stateUI.update { it.copy(detailItemResult = list.toList()) }

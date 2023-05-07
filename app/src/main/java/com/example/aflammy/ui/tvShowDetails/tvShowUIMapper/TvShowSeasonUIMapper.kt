@@ -2,13 +2,13 @@ package com.example.aflammy.ui.tvShowDetails.tvShowUIMapper
 
 import com.example.aflammy.domain.mappers.Mapper
 import com.example.aflammy.domain.models.Season
-import com.example.aflammy.ui.tvShowDetails.tvShowUIState.SeasonUIState
+import com.example.aflammy.ui.tvShowDetails.tvShowUIState.TvShowSeasonUIState
 import javax.inject.Inject
 
 
-class TvShowSeasonUIMapper @Inject constructor() : Mapper<Season, SeasonUIState> {
-    override fun map(input: Season): SeasonUIState {
-        return SeasonUIState(
+class TvShowSeasonUIMapper @Inject constructor() : Mapper<Season, TvShowSeasonUIState> {
+    override fun map(input: Season): TvShowSeasonUIState {
+        return TvShowSeasonUIState(
             seasonName = input.seasonName,
             seasonNumber = input.seasonNumber,
             imageUrl = input.imageUrl,

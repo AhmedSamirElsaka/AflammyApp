@@ -9,7 +9,7 @@ import com.example.aflammy.ui.base.BaseViewModel
 import com.example.aflammy.ui.search.adapters.ActorSearchInteractionListener
 import com.example.aflammy.ui.search.adapters.MediaSearchInteractionListener
 import com.example.aflammy.ui.search.adapters.SearchHistoryInteractionListener
-import com.example.aflammy.ui.search.mediaSearchUIState.Error
+import com.example.aflammy.ui.search.mediaSearchUIState.MediaSearchUIError
 import com.example.aflammy.ui.search.mediaSearchUIState.MediaSearchUIState
 import com.example.aflammy.ui.search.mediaSearchUIState.MediaTypes
 import com.example.aflammy.ui.search.mediaSearchUIState.MediaUIState
@@ -66,7 +66,7 @@ class SearchViewModel @Inject constructor(
                 }
             } catch (e: Throwable) {
                 _uiState.update {
-                    it.copy(error = listOf(com.example.aflammy.ui.search.mediaSearchUIState.Error(0, e.message.toString())))
+                    it.copy(mediaSearchUIError = listOf(com.example.aflammy.ui.search.mediaSearchUIState.MediaSearchUIError(0, e.message.toString())))
                 }
             }
         }
@@ -153,12 +153,12 @@ class SearchViewModel @Inject constructor(
         when (combinedLoadStates.refresh) {
             is LoadState.Loading -> {
                 _uiState.update {
-                    it.copy(isLoading = true, error = emptyList(), isEmpty = false)
+                    it.copy(isLoading = true, mediaSearchUIError = emptyList(), isEmpty = false)
                 }
             }
             is LoadState.Error -> {
                 _uiState.update {
-                    it.copy(isLoading = false, error = listOf(Error(404, "")), isEmpty = false)
+                    it.copy(isLoading = false, mediaSearchUIError = listOf(MediaSearchUIError(404, "")), isEmpty = false)
                 }
             }
             is LoadState.NotLoading -> {
@@ -167,7 +167,7 @@ class SearchViewModel @Inject constructor(
                         it.copy(
                             isEmpty = true,
                             isLoading = false,
-                            error = emptyList()
+                            mediaSearchUIError = emptyList()
                         )
                     }
                 } else {
@@ -175,7 +175,7 @@ class SearchViewModel @Inject constructor(
                         it.copy(
                             isEmpty = false,
                             isLoading = false,
-                            error = emptyList()
+                            mediaSearchUIError = emptyList()
                         )
                     }
                 }

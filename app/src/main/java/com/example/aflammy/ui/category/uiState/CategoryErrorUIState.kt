@@ -1,6 +1,6 @@
 package com.example.aflammy.ui.category.uiState
 
-data class ErrorUIState(
+data class CategoryErrorUIState(
     val code: Int,
     val message: String
 )

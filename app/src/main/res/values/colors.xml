@@ -38,5 +38,6 @@
     <color name="next_3">#2F6DFF</color>
     <color name="next_4">#5FA091</color>
     <color name="dark_navy">#0E2132</color>
+    <color name="home_fragment_background">#2D2D2D</color>
 
 </resources>

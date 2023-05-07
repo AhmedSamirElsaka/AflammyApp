@@ -4,7 +4,7 @@ import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.viewModelScope
 import com.example.aflammy.domain.usecases.mylist.GetMyMediaListDetailsUseCase
 import com.example.aflammy.ui.base.BaseViewModel
-import com.example.aflammy.ui.category.uiState.ErrorUIState
+import com.example.aflammy.ui.category.uiState.CategoryErrorUIState
 import com.example.aflammy.ui.myList.listDetails.listDetailsUIState.ListDetailsUIEvent
 import com.example.aflammy.ui.myList.listDetails.listDetailsUIState.ListDetailsUIState
 import com.example.aflammy.ui.myList.listDetails.listDetailsUIState.SavedMediaUIState
@@ -56,7 +56,7 @@ class ListDetailsViewModel @Inject constructor(
                 _listDetailsUIState.update {
                     it.copy(
                         isLoading = false, error = listOf(
-                            ErrorUIState(0, t.message.toString())
+                            CategoryErrorUIState(0, t.message.toString())
                         )
                     )
                 }

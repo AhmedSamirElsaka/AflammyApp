@@ -29,7 +29,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:posterImage="@{item.userImage}"
             app:shapeAppearanceOverlay="@style/Circle"
-            tools:srcCompat="@drawable/image" />
+            tools:srcCompat="@drawable/actor" />
 
         <TextView
             android:id="@+id/name"

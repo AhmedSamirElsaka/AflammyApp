@@ -4,7 +4,7 @@ import androidx.lifecycle.viewModelScope
 import com.example.aflammy.domain.usecases.mylist.CreateMovieListUseCase
 import com.example.aflammy.domain.usecases.mylist.GetMyListUseCase
 import com.example.aflammy.ui.base.BaseViewModel
-import com.example.aflammy.ui.category.uiState.ErrorUIState
+import com.example.aflammy.ui.category.uiState.CategoryErrorUIState
 import com.example.aflammy.ui.myList.myListUIState.CreateListDialogUIState
 import com.example.aflammy.ui.myList.myListUIState.CreatedListUIState
 import com.example.aflammy.ui.myList.myListUIState.MyListUIEvent
@@ -92,9 +92,9 @@ class MyListsViewModel @Inject constructor(
     private fun setError(t: Throwable) {
         _createdListUIState.update {
             val error = if (t.message == NO_LOGIN) {
-                listOf(ErrorUIState(NEED_LOGIN, t.message.toString()))
+                listOf(CategoryErrorUIState(NEED_LOGIN, t.message.toString()))
             } else {
-                listOf(ErrorUIState(INTERNET_CONNECTION, t.message.toString()))
+                listOf(CategoryErrorUIState(INTERNET_CONNECTION, t.message.toString()))
             }
             it.copy(isLoading = false, error = error)
         }

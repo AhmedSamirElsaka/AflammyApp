@@ -23,10 +23,9 @@
                     app:errorNotEmpty="@{viewModel.uiState.error}">
 
                     <com.google.android.material.appbar.MaterialToolbar
-                        android:id="@+id/toolbar"
+                        android:id="@+id/dialog_toolbar"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/bottom_line"
                         app:contentInsetStart="0dp"
                         app:layout_scrollFlags="scroll|enterAlways">
 
@@ -76,8 +75,8 @@
                     tools:listitem="@layout/item_category" />
 
                 <include
-                    android:id="@+id/error"
-                    layout="@layout/error2"
+                    android:id="@+id/home_error_layout"
+                    layout="@layout/error_layout"
                     app:isError="@{!viewModel.uiState.error.empty}"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -86,8 +85,8 @@
                     app:viewModel="@{viewModel}" />
 
                 <include
-                    android:id="@+id/loading"
-                    layout="@layout/loading2"
+                    android:id="@+id/home_loading_layout"
+                    layout="@layout/loading_layout"
                     app:isLoading="@{viewModel.uiState.loading}"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"

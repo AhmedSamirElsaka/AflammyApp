@@ -7,7 +7,7 @@
 
         <variable
             name="item"
-            type="com.example.aflammy.ui.tvShowDetails.tvShowUIState.ReviewUIState" />
+            type="com.example.aflammy.ui.tvShowDetails.tvShowUIState.TvShowReviewUIState" />
 
     </data>
 
@@ -27,7 +27,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:posterImage="@{item.userImage}"
             app:shapeAppearanceOverlay="@style/Circle"
-            tools:srcCompat="@drawable/image" />
+            tools:srcCompat="@drawable/actor" />
 
         <TextView
             android:id="@+id/name"

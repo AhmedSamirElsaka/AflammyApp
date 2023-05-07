@@ -12,10 +12,10 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/background_color">
+        android:background="@color/home_fragment_background">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView"
+            android:id="@+id/home_recycler_view"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:overScrollMode="never"
@@ -27,8 +27,8 @@
             app:spanCount="1" />
 
         <include
-            android:id="@+id/loading"
-            layout="@layout/loading2"
+            android:id="@+id/home_loading_layout"
+            layout="@layout/loading_layout"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -37,8 +37,8 @@
             />
 
         <include
-            android:id="@+id/error"
-            layout="@layout/error2"
+            android:id="@+id/home_error_layout"
+            layout="@layout/error_layout"
             app:isError="@{viewModel.homeUiState.error.size() &gt;5 &amp;&amp; !viewModel.homeUiState.loading}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

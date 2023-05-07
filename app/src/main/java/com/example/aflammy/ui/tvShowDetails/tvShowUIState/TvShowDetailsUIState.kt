@@ -6,11 +6,11 @@ import com.example.aflammy.ui.models.ActorUiState
 data class TvShowDetailsUIState(
     val tvShowDetailsResult: TvShowDetailsResultUIState = TvShowDetailsResultUIState(),
     val seriesCastResult: List<ActorUiState> = listOf(),
-    val seriesSeasonsResult: List<SeasonUIState> = listOf(),
-    val seriesReviewsResult: List<ReviewUIState> = listOf(),
-    val detailItemResult: List<DetailItemUIState> = listOf(),
+    val seriesSeasonsResult: List<TvShowSeasonUIState> = listOf(),
+    val seriesReviewsResult: List<TvShowReviewUIState> = listOf(),
+    val detailItemResult: List<TvShowDetailItemUIState> = listOf(),
     val ratingValue: Float = 0F,
     val isLoading: Boolean = false,
     val isLogin: Boolean = false,
-    val errorUIState: List<Error> = emptyList()
+    val tvShowErrorUIState: List<TvShowError> = emptyList()
 )

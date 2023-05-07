@@ -17,12 +17,13 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:background="@color/background_color"
-        android:background="@android:color/transparent">
+        android:background="@color/background_color"
+        android:layout_marginTop="@dimen/spacing_small">
 
         <TextView
             android:id="@+id/text_celebrities"
-            style="@style/SemiBold.Medium"
+            style="@style/SemiBold.Large"
+            android:textColor="@color/brand_color"
             android:layout_marginStart="@dimen/spacing_medium"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -39,7 +40,6 @@
             android:layout_marginEnd="@dimen/spacing_too_small"
             android:onClick="@{() -> listener.onClickSeeAllActors()}"
             android:text="@string/see_all"
-            android:textColor="@color/brand_color"
             app:drawableEndCompat="@drawable/ic_arrow_right"
             app:layout_constraintBaseline_toBaselineOf="@+id/text_celebrities"
             app:layout_constraintEnd_toEndOf="parent" />

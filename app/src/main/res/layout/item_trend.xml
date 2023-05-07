@@ -22,7 +22,7 @@
         app:layout_constraintDimensionRatio="1:1.4"
         android:scaleType="centerCrop"
         app:shapeAppearanceOverlay="@style/CardCorners.Medium"
-        tools:src="@drawable/trend"
+        tools:src="@drawable/movie"
         app:posterImage="@{item.mediaImage}"
         android:onClick="@{() -> listener.onClickTrend(item)}"
         android:layout_marginHorizontal="@dimen/spacing_small"

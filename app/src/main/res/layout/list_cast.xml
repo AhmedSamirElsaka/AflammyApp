@@ -14,13 +14,15 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/spacing_medium"
-        android:background="@color/background_color">
+        android:layout_marginVertical="@dimen/spacing_small"
+        android:background="@color/background_color"
+        android:padding="@dimen/spacing_too_small">
 
         <TextView
             android:id="@+id/cast"
-            style="@style/SemiBold.Medium"
+            style="@style/SemiBold.Large"
             android:layout_width="wrap_content"
+            android:textColor="@color/brand_color"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/spacing_medium"
             android:text="@string/cast"

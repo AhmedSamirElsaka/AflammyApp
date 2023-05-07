@@ -27,7 +27,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:mediaPoster="@{item.tvShowImage}"
-            tools:src="@drawable/image" />
+            tools:src="@drawable/movie" />
 
         <View
             android:id="@+id/view_bottom_shadow"
@@ -101,7 +101,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView"
-            tools:text="A Star Wars Story" />
+            tools:text="Avengers: Endgame (2019)" />
 
         <TextView
             android:id="@+id/release_date"

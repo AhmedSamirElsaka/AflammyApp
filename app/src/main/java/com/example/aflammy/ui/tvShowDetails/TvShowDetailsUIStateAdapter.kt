@@ -10,13 +10,13 @@ import com.example.aflammy.ui.adapters.ActorsInteractionListener
 import com.example.aflammy.ui.base.BaseAdapter
 import com.example.aflammy.ui.base.BaseInteractionListener
 import com.example.aflammy.ui.movieDetails.DetailInteractionListener
-import com.example.aflammy.ui.tvShowDetails.tvShowUIState.DetailItemUIState
+import com.example.aflammy.ui.tvShowDetails.tvShowUIState.TvShowDetailItemUIState
 
 
-class DetailUIStateAdapter(
-    private var items: List<DetailItemUIState>,
+class TvShowDetailsUIStateAdapter(
+    private var items: List<TvShowDetailItemUIState>,
     private val listener: BaseInteractionListener
-) : BaseAdapter<DetailItemUIState>(items, listener) {
+) : BaseAdapter<TvShowDetailItemUIState>(items, listener) {
     override val layoutID: Int = 0
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseViewHolder {
@@ -36,13 +36,13 @@ class DetailUIStateAdapter(
 
     override fun bind(holder: ItemViewHolder, position: Int) {
         when (val currentItem = items[position]) {
-            is DetailItemUIState.Header -> {
+            is TvShowDetailItemUIState.Header -> {
                 holder.binding.run {
                     setVariable(BR.item, currentItem.data)
                     setVariable(BR.listener, listener as DetailInteractionListener)
                 }
             }
-            is DetailItemUIState.Cast -> {
+            is TvShowDetailItemUIState.Cast -> {
                 holder.binding.run {
                     setVariable(
                         BR.adapterRecycler,
@@ -54,7 +54,7 @@ class DetailUIStateAdapter(
                     )
                 }
             }
-            is DetailItemUIState.Seasons -> {
+            is TvShowDetailItemUIState.Seasons -> {
                 holder.binding.run {
                     setVariable(
                         BR.adapterRecycler,
@@ -62,19 +62,19 @@ class DetailUIStateAdapter(
                     )
                 }
             }
-            is DetailItemUIState.Rating -> {
+            is TvShowDetailItemUIState.Rating -> {
                 holder.binding.run {
                     setVariable(BR.viewModel, currentItem.viewModel)
                 }
             }
-            is DetailItemUIState.Comment -> {
+            is TvShowDetailItemUIState.Comment -> {
                 holder.binding.run {
                     setVariable(BR.item, currentItem.data)
                     setVariable(BR.listener, listener)
                 }
             }
-            is DetailItemUIState.ReviewText -> {}
-            DetailItemUIState.SeeAllReviewsButton -> {
+            is TvShowDetailItemUIState.ReviewText -> {}
+            TvShowDetailItemUIState.SeeAllReviewsButton -> {
                 holder.binding.run {
                     setVariable(BR.listener, listener as DetailInteractionListener)
                 }
@@ -82,24 +82,24 @@ class DetailUIStateAdapter(
         }
     }
 
-    override fun setItems(newItems: List<DetailItemUIState>) {
+    override fun setItems(newItems: List<TvShowDetailItemUIState>) {
         items = newItems.sortedBy { it.priority }
         super.setItems(items)
     }
 
-    override fun areItemsSame(oldItem: DetailItemUIState, newItem: DetailItemUIState): Boolean {
+    override fun areItemsSame(oldItem: TvShowDetailItemUIState, newItem: TvShowDetailItemUIState): Boolean {
         return oldItem.priority == newItem.priority
     }
 
     override fun getItemViewType(position: Int): Int {
         return when (items[position]) {
-            is DetailItemUIState.Header -> R.layout.item_tv_show_details_header
-            is DetailItemUIState.Cast -> R.layout.list_cast
-            is DetailItemUIState.Seasons -> R.layout.list_season
-            is DetailItemUIState.Rating -> R.layout.item_tvshow_rating
-            is DetailItemUIState.Comment -> R.layout.item_tvshow_review
-            is DetailItemUIState.ReviewText -> R.layout.item_review_text
-            DetailItemUIState.SeeAllReviewsButton -> R.layout.item_see_all_reviews
+            is TvShowDetailItemUIState.Header -> R.layout.item_tv_show_details_header
+            is TvShowDetailItemUIState.Cast -> R.layout.list_cast
+            is TvShowDetailItemUIState.Seasons -> R.layout.list_season
+            is TvShowDetailItemUIState.Rating -> R.layout.item_tvshow_rating
+            is TvShowDetailItemUIState.Comment -> R.layout.item_tvshow_review
+            is TvShowDetailItemUIState.ReviewText -> R.layout.item_review_text
+            TvShowDetailItemUIState.SeeAllReviewsButton -> R.layout.item_see_all_reviews
         }
     }
 }

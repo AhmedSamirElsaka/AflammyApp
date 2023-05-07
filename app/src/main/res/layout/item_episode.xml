@@ -29,7 +29,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:posterImage="@{item.imageUrl}"
             app:shapeAppearanceOverlay="@style/CardCorners.Small"
-            tools:src="@drawable/test_4" />
+            tools:src="@drawable/movie" />
 
         <TextView
             android:id="@+id/text_episode_name"
@@ -44,7 +44,7 @@
             app:layout_constraintEnd_toStartOf="@+id/text_episode_duration"
             app:layout_constraintStart_toEndOf="@+id/image_episode"
             app:layout_constraintTop_toTopOf="@+id/image_episode"
-            tools:text="1. Cargo" />
+            tools:text="Avengers: Endgame (2019)" />
 
         <TextView
             android:id="@+id/text_episode_duration"

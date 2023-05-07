@@ -50,7 +50,7 @@ class SaveMovieViewModel @Inject constructor(
                 _myListsUIState.update {
                     it.copy(
                         isLoading = false,
-                        error = listOf(com.example.aflammy.ui.category.uiState.ErrorUIState(404, t.message.toString()))
+                        error = listOf(com.example.aflammy.ui.category.uiState.CategoryErrorUIState(404, t.message.toString()))
                     )
                 }
             }

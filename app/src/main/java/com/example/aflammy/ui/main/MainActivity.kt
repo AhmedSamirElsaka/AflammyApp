@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
             )
         )
         val navController = findNavController(R.id.nav_host_fragment)
-        binding.bottomNavigation.setupWithNavController(navController)
+        binding.mainBottomNavigation.setupWithNavController(navController)
         setupActionBarWithNavController(navController, appBarConfiguration)
 
         setBottomNavigationVisibility(navController)
@@ -59,12 +59,12 @@ class MainActivity : AppCompatActivity() {
 
     private fun setBottomNavigationVisibility(navController: NavController) {
         navController.addOnDestinationChangedListener { _, destination, _ ->
-            binding.bottomNavigation.isVisible = destination.id != R.id.loginFragment
+            binding.mainBottomNavigation.isVisible = destination.id != R.id.loginFragment
         }
     }
 
     private fun setNavigationController(navController: NavController) {
-        binding.bottomNavigation.setOnItemSelectedListener { item ->
+        binding.mainBottomNavigation.setOnItemSelectedListener { item ->
             NavigationUI.onNavDestinationSelected(item, navController)
             navController.popBackStack(item.itemId, inclusive = false)
             true

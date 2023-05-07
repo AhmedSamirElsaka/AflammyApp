@@ -30,7 +30,7 @@
             tools:listitem="@layout/item_list_details" />
 
         <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/loading"
+            android:id="@+id/home_loading_layout"
             android:layout_width="@dimen/lottie_dimens"
             android:layout_height="@dimen/lottie_dimens"
             app:isVisible="@{viewModel.listDetailsUIState.loading}"
@@ -45,7 +45,7 @@
         <!--        empty List          -->
 
         <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/no_data"
+            android:id="@+id/no_data_animation"
             android:layout_width="@dimen/lottie_dimens"
             android:layout_height="@dimen/lottie_dimens"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -57,15 +57,15 @@
             app:lottie_rawRes="@raw/no_data" />
 
         <TextView
-            android:id="@+id/title"
+            android:id="@+id/no_data_title"
             style="@style/SemiBold.Large"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/empty"
             android:textColor="@color/brand_color"
-            app:layout_constraintEnd_toEndOf="@+id/no_data"
-            app:layout_constraintStart_toStartOf="@+id/no_data"
-            app:layout_constraintTop_toBottomOf="@+id/no_data" />
+            app:layout_constraintEnd_toEndOf="@+id/no_data_animation"
+            app:layout_constraintStart_toStartOf="@+id/no_data_animation"
+            app:layout_constraintTop_toBottomOf="@+id/no_data_animation" />
 
         <TextView
             android:id="@+id/description_empty_list"
@@ -74,15 +74,15 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/spacing_small"
             android:text="@string/this_list_has_no_movies"
-            app:layout_constraintEnd_toEndOf="@+id/no_data"
-            app:layout_constraintStart_toStartOf="@+id/no_data"
-            app:layout_constraintTop_toBottomOf="@+id/title" />
+            app:layout_constraintEnd_toEndOf="@+id/no_data_animation"
+            app:layout_constraintStart_toStartOf="@+id/no_data_animation"
+            app:layout_constraintTop_toBottomOf="@+id/no_data_title" />
 
         <androidx.constraintlayout.widget.Group
             android:id="@+id/empty_group"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:constraint_referenced_ids="description_empty_list,title,no_data"
+            app:constraint_referenced_ids="description_empty_list,no_data_title,no_data_animation"
             app:isListEmpty="@{viewModel.listDetailsUIState.isEmpty}" />
 
         <!--        Error State         -->

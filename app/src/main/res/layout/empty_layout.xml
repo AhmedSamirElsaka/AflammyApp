@@ -15,7 +15,7 @@
         android:background="@color/background_color" >
 
         <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/no_data"
+            android:id="@+id/no_data_animation"
             android:layout_width="@dimen/lottie_dimens"
             android:layout_height="@dimen/lottie_dimens"
             app:lottie_autoPlay="true"
@@ -27,25 +27,26 @@
             app:lottie_rawRes="@raw/no_data" />
 
         <TextView
-            android:id="@+id/title"
+            android:id="@+id/no_data_title"
             style="@style/SemiBold.Large"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/empty"
             android:textColor="@color/brand_color"
-            app:layout_constraintEnd_toEndOf="@+id/no_data"
-            app:layout_constraintStart_toStartOf="@+id/no_data"
-            app:layout_constraintTop_toBottomOf="@+id/no_data" />
+            app:layout_constraintEnd_toEndOf="@+id/no_data_animation"
+            app:layout_constraintStart_toStartOf="@+id/no_data_animation"
+            app:layout_constraintTop_toBottomOf="@+id/no_data_animation" />
 
         <TextView
+            android:id="@+id/no_data_description"
             style="@style/Regular.Medium.Secondary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/spacing_small"
             android:text="@string/this_list_has_no_movies"
-            app:layout_constraintEnd_toEndOf="@+id/no_data"
-            app:layout_constraintStart_toStartOf="@+id/no_data"
-            app:layout_constraintTop_toBottomOf="@+id/title" />
+            app:layout_constraintEnd_toEndOf="@+id/no_data_animation"
+            app:layout_constraintStart_toStartOf="@+id/no_data_animation"
+            app:layout_constraintTop_toBottomOf="@+id/no_data_title" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

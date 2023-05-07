@@ -112,7 +112,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/loading"
+            android:id="@+id/home_loading_layout"
             android:layout_width="@dimen/lottie_loading_dimens"
             android:layout_height="@dimen/lottie_loading_dimens"
             app:isVisible="@{viewModel.ratedUiState.loading}"

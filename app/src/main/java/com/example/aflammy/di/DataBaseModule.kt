@@ -4,7 +4,7 @@ import android.content.Context
 import androidx.room.Room
 import com.example.aflammy.data.local.DataStorePreferences
 import com.example.aflammy.data.local.database.Converters
-import com.example.aflammy.data.local.database.MovieDataBase
+import com.example.aflammy.data.local.database.AflammyDataBase
 import com.example.aflammy.data.local.database.daos.ActorDao
 import com.example.aflammy.data.local.database.daos.MovieDao
 import com.example.aflammy.data.local.database.daos.SeriesDao
@@ -25,27 +25,27 @@ object DataBaseModule {
     fun providesRoomDatabase(
         @ApplicationContext context: Context,
         converters: Converters,
-    ): MovieDataBase =
-        Room.databaseBuilder(context, MovieDataBase::class.java, "MovieDatabase")
+    ): AflammyDataBase =
+        Room.databaseBuilder(context, AflammyDataBase::class.java, "MovieDatabase")
             .addTypeConverter(converters)
             .build()
 
     @Singleton
     @Provides
-    fun provideMovieDao(movieDataBase: MovieDataBase): MovieDao {
-        return movieDataBase.movieDao()
+    fun provideMovieDao(aflammyDataBase: AflammyDataBase): MovieDao {
+        return aflammyDataBase.movieDao()
     }
 
     @Singleton
     @Provides
-    fun provideActorDao(movieDataBase: MovieDataBase): ActorDao {
-        return movieDataBase.actorDao()
+    fun provideActorDao(aflammyDataBase: AflammyDataBase): ActorDao {
+        return aflammyDataBase.actorDao()
     }
 
     @Singleton
     @Provides
-    fun provideSeriesDao(movieDataBase: MovieDataBase): SeriesDao {
-        return movieDataBase.seriesDao()
+    fun provideSeriesDao(aflammyDataBase: AflammyDataBase): SeriesDao {
+        return aflammyDataBase.seriesDao()
     }
 
     @Singleton
