@@ -1,4 +1,4 @@
-package com.example.aflammy.ui.splashScreen
+package com.example.aflammy.ui.onboardingScreen
 
 import android.content.Intent
 import android.graphics.Color
@@ -11,9 +11,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.aflammy.R
 import com.example.aflammy.databinding.ActivityOnboardingScreenBinding
 import com.example.aflammy.ui.main.MainActivity
-import com.example.aflammy.ui.onboardingScreen.OnBoardingViewModel
-import com.example.aflammy.ui.onboardingScreen.OnboardingAdapter
-import com.example.aflammy.ui.onboardingScreen.OnboardingPageTransformer
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

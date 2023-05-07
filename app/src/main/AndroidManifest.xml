@@ -27,7 +27,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".ui.splashScreen.OnBoardingScreen"
+            android:name=".ui.onboardingScreen.OnBoardingScreen"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

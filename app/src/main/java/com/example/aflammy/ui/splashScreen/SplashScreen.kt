@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
 import com.example.aflammy.R
-import com.example.aflammy.ui.main.MainActivity
+import com.example.aflammy.ui.onboardingScreen.OnBoardingScreen
 
 
 class SplashScreen : AppCompatActivity() {
