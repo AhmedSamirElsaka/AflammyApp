@@ -1,3 +1,5 @@
+![Logo](https://github.com/ahmedsamir65491/AflammyApp/blob/master/app/src/main/res/drawable/aflammy2.png)
+
 # Application Overview
 Aflammy is an Android Movies App and it is a powerful mobile application that allows users to browse and explore a vast collection of movies and TV series. This app leverages the TMDB (The Movie Database) API to provide users with detailed information, trailers, reviews, and ratings for each title. With its user-friendly interface and comprehensive features, the Android Movies App offers an immersive movie-watching experience right at your fingertips.
 
