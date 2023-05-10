@@ -44,6 +44,7 @@
             android:layout_marginTop="@dimen/spacing_small"
             android:ellipsize="end"
             android:lines="2"
+            android:gravity="center"
             android:text="@{item.name}"
             android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="@+id/cast_image"

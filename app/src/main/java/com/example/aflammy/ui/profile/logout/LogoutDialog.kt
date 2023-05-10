@@ -21,8 +21,7 @@ class LogoutDialog() : BaseDialog<DialogLogoutBinding>(), Parcelable {
     override val layoutIdFragment: Int = R.layout.dialog_logout
     override val viewModel: LogoutViewModel by viewModels()
 
-    constructor(parcel: Parcel) : this() {
-    }
+    constructor(parcel: Parcel) : this()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

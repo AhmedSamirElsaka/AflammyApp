@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/spacing_medium"
-            app:dotsColor="@color/colorDisabled"
+            app:dotsColor="#BBBABA"
             app:dotsCornerRadius="@dimen/radius_small"
             app:dotsSize="16dp"
             app:dotsSpacing="@dimen/spacing_too_small"
@@ -28,7 +28,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:progressMode="true"
-            app:selectedDotColor="@color/brand_color" />
+            app:selectedDotColor="@color/main_color" />
 
         <Button
             android:id="@+id/splash_next_button"
@@ -36,8 +36,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/spacing_small"
-            android:layout_marginTop="@dimen/spacing_small"
-            android:layout_marginBottom="@dimen/spacing_small"
+            android:layout_marginVertical="@dimen/spacing_small"
             android:background="@drawable/onboarding_activity_button_1"
             android:onClick="nextPage"
             android:text="@string/next"

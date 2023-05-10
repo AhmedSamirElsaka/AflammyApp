@@ -46,7 +46,7 @@ fun List<ResultDto?>.getKey(): String? = this.map {
 
 fun MyListsDto.checkIfExist(movie_id: Int): Boolean {
     this.items?.map {
-        if (it?.id == movie_id) {
+        if (it.id == movie_id) {
             return true
         }
     }

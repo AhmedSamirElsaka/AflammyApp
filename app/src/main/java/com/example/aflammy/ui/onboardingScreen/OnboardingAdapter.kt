@@ -29,7 +29,7 @@ class OnboardingAdapter constructor(var context: Context):PagerAdapter() {
     override fun instantiateItem(container: ViewGroup, position: Int): Any {
 //        return super.instantiateItem(container, position);
         val layoutInflater =
-            context!!.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+            context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         val view = layoutInflater.inflate(layouts[position], container, false)
         view.tag = position
         container.addView(view)

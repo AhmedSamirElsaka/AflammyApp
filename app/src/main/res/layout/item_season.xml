@@ -94,6 +94,7 @@
             style="@style/Regular.Small"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:layout_marginStart="@dimen/spacing_too_small"
             android:text="@{@string/total_episodes(String.valueOf(item.episodeCount))}"
             android:textColor="@color/shade_ternary_color"

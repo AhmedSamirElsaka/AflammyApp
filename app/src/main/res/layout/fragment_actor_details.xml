@@ -67,7 +67,7 @@
             android:layout_marginTop="@dimen/spacing_large"
             android:gravity="center"
             android:text="@string/description"
-            android:textColor="@color/brand_color"
+            android:textColor="@color/main_color"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/animation_lost_connection"
@@ -115,11 +115,12 @@
             style="@style/SemiBold.Large"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="@{viewModel.actorDetailsUIState.name}"
             app:layout_constraintBottom_toBottomOf="@+id/actor_image"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:text="Chris Evans" />
+            tools:text="@string/actor_name_demo" />
 
 
         <androidx.core.widget.NestedScrollView
@@ -178,6 +179,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_small"
+                    android:gravity="center"
                     android:text="@{viewModel.actorDetailsUIState.birthday}"
                     app:layout_constraintEnd_toEndOf="@+id/birthday_title"
                     app:layout_constraintStart_toStartOf="@+id/birthday_title"
@@ -203,6 +205,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="@dimen/spacing_small"
                     android:lines="2"
+                    android:gravity="center"
                     android:text="@{viewModel.actorDetailsUIState.placeOfBirth}"
                     android:textAlignment="center"
                     app:layout_constraintEnd_toEndOf="@+id/place_of_birth_actor_title"
@@ -229,6 +232,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_small"
                     android:lines="2"
+                    android:gravity="center"
                     android:text="@{viewModel.actorDetailsUIState.knownFor}"
                     android:textAlignment="center"
                     app:layout_constraintEnd_toEndOf="@+id/known_for_actor_title"
@@ -238,9 +242,10 @@
 
                 <TextView
                     android:id="@+id/related_movie_title"
-                    style="@style/SemiBold.Medium"
+                    style="@style/SemiBold.Large"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/main_color"
                     android:layout_marginStart="@dimen/radius_medium"
                     android:layout_marginTop="@dimen/spacing_large"
                     android:text="@string/movies"
@@ -258,7 +263,6 @@
                     android:onClick="@{() -> viewModel.onClickSeeAllMovie(HomeItemsType.NON)}"
                     app:showWhenListNotEmpty="@{viewModel.actorDetailsUIState.actorMovies}"
                     android:text="@string/see_all"
-                    android:textColor="@color/brand_color"
                     app:drawableEndCompat="@drawable/ic_arrow_right"
                     app:layout_constraintBottom_toBottomOf="@+id/related_movie_title"
                     app:layout_constraintEnd_toEndOf="parent"

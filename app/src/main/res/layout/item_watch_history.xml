@@ -20,7 +20,7 @@
         android:layout_marginHorizontal="@dimen/spacing_medium"
         android:layout_marginTop="@dimen/spacing_medium"
         app:strokeWidth="@dimen/card_stroke_width"
-        app:strokeColor="@color/brand_color"
+        app:strokeColor="@color/main_color"
         android:onClick="@{() -> listener.onClickMovie(item)}"
         app:cardCornerRadius="@dimen/radius_large"
         app:cardElevation="0dp"

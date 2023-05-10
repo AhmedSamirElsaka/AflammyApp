@@ -1,9 +1,9 @@
 <resources >
     <style name="Theme.Aflammy" parent="Theme.MaterialComponents.DayNight">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#FFC107</item>
+        <item name="colorPrimary">@color/main_color</item>
         <item name="colorPrimaryVariant">#FFA000</item>
-        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorOnPrimary">@color/white</item>
 
         <!-- Secondary brand color. -->
         <item name="colorSecondary">#4CAF50</item>
@@ -106,12 +106,6 @@
 
     </style>
 
-    <style name="Theme.MovieApp.SplashScreen" parent="Theme.SplashScreen.IconBackground">
-        <item name="postSplashScreenTheme">@style/Theme.Aflammy</item>
-        <item name="windowSplashScreenBackground">@color/black</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
-    </style>
-
     <style name="CircleImage">
         <item name="cornerSize">50%</item>
     </style>
@@ -136,7 +130,7 @@
 
 
     <style name="chipChip" parent="Widget.Material3.Chip.Suggestion">
-        <item name="chipStrokeColor">@color/brand_color</item>
+        <item name="chipStrokeColor">@color/main_color</item>
         <item name="chipSurfaceColor">@color/shade_secondary_color</item>
         <item name="chipStrokeWidth">@dimen/cardview_compat_inset_shadow</item>
     </style>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/brand_color"
+    android:background="@color/main_color"
     tools:context=".ui.splashScreen.SplashScreen">
 
     <ImageView

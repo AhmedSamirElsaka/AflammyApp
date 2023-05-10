@@ -20,7 +20,7 @@
         android:layout_marginHorizontal="@dimen/spacing_small"
         android:onClick="@{() -> listener.onClickMediaResult(item)}"
         app:cardCornerRadius="@dimen/radius_large"
-        app:strokeColor="@color/brand_color"
+        app:strokeColor="@color/main_color"
         app:strokeWidth="@dimen/card_stroke_width"
         app:cardBackgroundColor="@color/background_color">
 
@@ -50,6 +50,7 @@
                 android:layout_marginVertical="@dimen/spacing_small"
                 android:ellipsize="end"
                 android:lines="2"
+                android:gravity="start"
                 android:text="@{item.mediaName}"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/image_movie"

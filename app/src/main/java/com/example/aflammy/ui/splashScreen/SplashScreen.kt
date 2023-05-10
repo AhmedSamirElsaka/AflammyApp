@@ -13,8 +13,8 @@ class SplashScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
 
-        supportActionBar?.setDisplayShowHomeEnabled(false);
-        supportActionBar?.hide();
+        supportActionBar?.setDisplayShowHomeEnabled(false)
+        supportActionBar?.hide()
 
         Handler().postDelayed(Runnable { //This method will be executed once the timer is over
             // Start your app main activity

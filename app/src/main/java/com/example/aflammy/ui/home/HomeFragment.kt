@@ -27,6 +27,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
         setAdapter()
         collectEvent()
         collectHomeData()
+
     }
 
     private fun collectHomeData() {

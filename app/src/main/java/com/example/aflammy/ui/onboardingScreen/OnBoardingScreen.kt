@@ -36,9 +36,9 @@ class OnBoardingScreen : AppCompatActivity() {
     // Listener for next button press
     fun nextPage(view: View) {
         if (view.id == R.id.splash_next_button) {
-            if (binding.onboardingViewPager!!.currentItem < onboardingAdapter.getCount() - 1) {
-                binding.onboardingViewPager!!.setCurrentItem(
-                    binding.onboardingViewPager!!.currentItem + 1,
+            if (binding.onboardingViewPager.currentItem < onboardingAdapter.count - 1) {
+                binding.onboardingViewPager.setCurrentItem(
+                    binding.onboardingViewPager.currentItem + 1,
                     true
                 )
             } else {
@@ -70,8 +70,8 @@ class OnBoardingScreen : AppCompatActivity() {
         binding.lifecycleOwner = this
         setContentView(binding.root)
 
-        supportActionBar?.setDisplayShowHomeEnabled(false);
-        supportActionBar?.hide();
+        supportActionBar?.setDisplayShowHomeEnabled(false)
+        supportActionBar?.hide()
     }
 
     private fun initializeViewPager() {

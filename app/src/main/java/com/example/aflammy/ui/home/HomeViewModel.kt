@@ -30,6 +30,7 @@ class HomeViewModel @Inject constructor(
 ) : BaseViewModel(), HomeInteractionListener, ActorsInteractionListener, MovieInteractionListener,
     MediaInteractionListener, TVShowInteractionListener {
 
+
     private val _homeUiState = MutableStateFlow(HomeUiState())
     val homeUiState = _homeUiState.asStateFlow()
 

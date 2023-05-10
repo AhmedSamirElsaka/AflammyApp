@@ -26,15 +26,14 @@
             app:hideIfTrue="@{viewModel.homeUiState.loading || viewModel.homeUiState.error.size() &gt;5}"
             app:spanCount="1" />
 
-        <include
-            android:id="@+id/home_loading_layout"
-            layout="@layout/loading_layout"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:isLoading="@{viewModel.homeUiState.loading}"
-            />
+<!--        <include-->
+<!--            android:id="@+id/home_loading_layout"-->
+<!--            layout="@layout/loading_layout"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:isLoading="@{viewModel.homeUiState.loading}" />-->
 
         <include
             android:id="@+id/home_error_layout"
@@ -45,6 +44,20 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:viewModel="@{viewModel}" />
+
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <include layout="@layout/shimmer_fragment_home"
+                app:isLoading="@{viewModel.homeUiState.loading}"/>
+
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -31,6 +31,7 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/spacing_large"
+            android:gravity="center"
             android:fontFamily="@font/plus_jakarta_sans_regular"
             android:text="@string/explore_some_movies_on_home_or_search_and_then_create_your_movie_list"
             android:textAlignment="center"
@@ -41,13 +42,15 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/list_name"
+            style="@style/text_input_layout_style"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/spacing_medium"
             android:layout_marginTop="@dimen/spacing_large"
             android:hint="@string/list_name"
-            android:textColorHint="@color/white_secondary"
-            app:hintTextColor="@color/white_secondary"
+            app:boxStrokeColor="@color/black"
+            android:textColorHint="@color/shade_ternary_color"
+            app:hintTextColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView5">
@@ -60,7 +63,7 @@
                 android:inputType="textPersonName"
                 android:maxLength="15"
                 android:maxLines="1"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textCursorDrawable="@drawable/color_cursor" />
 
         </com.google.android.material.textfield.TextInputLayout>

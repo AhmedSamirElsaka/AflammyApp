@@ -18,7 +18,7 @@
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:strokeColor="@color/brand_color"
+        app:strokeColor="@color/main_color"
         app:strokeWidth="@dimen/card_stroke_width"
         android:layout_marginHorizontal="@dimen/spacing_medium"
         android:layout_marginTop="@dimen/spacing_medium"
@@ -52,6 +52,7 @@
                 android:layout_marginHorizontal="@dimen/spacing_medium"
                 android:layout_marginVertical="@dimen/spacing_small"
                 android:ellipsize="end"
+                android:gravity="start"
                 android:lines="2"
                 android:text="@{item.title}"
                 app:layout_constraintEnd_toEndOf="parent"

@@ -56,7 +56,7 @@
             android:textColorHint="@color/shade_ternary_color"
             android:textCursorDrawable="@drawable/color_cursor"
             android:transitionName="search_box"
-            app:drawableTint="@color/brand_color"
+            app:drawableTint="@color/main_color"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/imagw_back_arrow"
             app:layout_constraintTop_toTopOf="parent">
@@ -120,7 +120,7 @@
 
         <TextView
             android:id="@+id/text_search_label"
-            style="@style/SemiBold.Medium"
+            style="@style/SemiBold.Large"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/spacing_medium"
@@ -158,6 +158,7 @@
             android:clipToPadding="false"
             android:orientation="vertical"
             android:overScrollMode="never"
+            android:layout_marginTop="@dimen/spacing_small"
             android:paddingVertical="@dimen/spacing_too_small"
             android:scrollbars="none"
             app:hideWhenSearch="@{viewModel.uiState.searchInput}"

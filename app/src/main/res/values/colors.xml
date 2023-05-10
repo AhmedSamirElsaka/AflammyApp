@@ -3,7 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="red">#FF1100</color>
-    <color name="brand_color">#FFC107</color>
+    <color name="main_color">#FFC107</color>
     <color name="colorDisabled">#8E6F13</color>
 
 
@@ -39,5 +39,8 @@
     <color name="next_4">#5FA091</color>
     <color name="dark_navy">#0E2132</color>
     <color name="home_fragment_background">#2D2D2D</color>
+
+
+    <color name="shammer_color">#C8EBFF</color>
 
 </resources>
