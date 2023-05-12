@@ -38,4 +38,37 @@ Happy movie watching with the Android Aflammy App!
 - [linkedin Account](https://www.linkedin.com/in/devahmedsamir)
 - [Facebook Account](https://www.facebook.com/devahmedsamir)
 
+# Screenshots
+
+![ screen ](https://i.imgur.com/2qNxuh8.jpeg "first Onboarding")
+![ screen ](https://i.imgur.com/YlDj2ek.jpg "second Onboarding")
+![ screen ](https://i.imgur.com/8ogNsV2.jpg "third Onboarding")
+![ screen ](https://i.imgur.com/VRxwKDL.jpg "fourth Onboarding")
+![ screen ](https://i.imgur.com/NYkeq0v.jpg "shammer screen")
+![ screen ](https://i.imgur.com/QLkwgRh.jpg "home screen")
+![ screen ](https://i.imgur.com/wNdk3vk.jpg "home screen")
+![ screen ](https://i.imgur.com/38Td6J0.jpg "home screen")
+![ screen ](https://i.imgur.com/VgYSGa8.jpg "actors screen")
+![ screen ](https://i.imgur.com/plgRfjx.jpg "top rated tv-show screen")
+![ screen ](https://i.imgur.com/t8bu0mE.jpg "trending screen")
+![ screen ](https://i.imgur.com/HFVHNcq.jpg "exploring screen ")
+![ screen ](https://i.imgur.com/JfCJeco.jpg "movie search screen")
+![ screen ](https://i.imgur.com/pDowFeE.jpg "tv shows search screen")
+![ screen ](https://i.imgur.com/haLpgXo.jpg "movie details screen")
+![ screen ](https://i.imgur.com/c7iiF8m.jpg "movie details screen")
+![ screen ](https://i.imgur.com/wBTKlBD.jpg "movie details screen")
+![ screen ](https://i.imgur.com/TFFTtQP.jpg "tv-show details screen")
+![ screen ](https://i.imgur.com/bS1cReB.jpg "tv-show details screen")
+![ screen ](https://i.imgur.com/AtxfD1W.jpg "login screen")
+![ screen ](https://i.imgur.com/hXnQXUp.jpg "profile screen")
+![ screen ](https://i.imgur.com/7xAIkMs.jpg "my lists screen")
+![ screen ](https://i.imgur.com/gDF1nr4.jpg "watch history screen")
+![ screen ](https://i.imgur.com/Edqa6ii.jpg "my ratings screen")
+![ screen ](https://i.imgur.com/Gikeeb5.jpg "logout dialog ")
+
+
+
+
+
+
 
